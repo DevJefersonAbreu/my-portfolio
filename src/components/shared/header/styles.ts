@@ -37,7 +37,7 @@ export const Logo = styled.div`
   background: linear-gradient(135deg, #5aabff 0%, #7b5aff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
 `;
 
@@ -45,12 +45,13 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-right: -20%;
 `;
 
 export const NavItem = styled.a`
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 
   &:hover {
@@ -61,11 +62,12 @@ export const NavItem = styled.a`
 export const ContactButton = styled.button`
   background: linear-gradient(to right, #5aabff, #7b5aff);
   color: white;
-  padding: 0.35rem 1rem;
+  padding: 0.25rem 1rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
+  font-size: .8rem;
   transition: opacity 0.3s ease;
 
   &:hover {

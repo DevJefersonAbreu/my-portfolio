@@ -46,7 +46,7 @@ const Services: React.FC = () => {
           transition: 'opacity 0.6s ease-out, transform 0.6s ease-out',
         }}
       >
-        SERVICES
+        SERVIÇOS
       </S.Title>
       <S.Grid>
         {services.map((service, index) => (

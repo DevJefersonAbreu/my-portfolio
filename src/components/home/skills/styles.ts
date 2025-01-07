@@ -5,6 +5,7 @@ export const Container = styled.section`
   width: 100%;
   min-height: 100vh;
   padding: 6rem 2rem;
+  margin-bottom: 4rem;
   background: linear-gradient(
     45deg,
     rgba(88, 100, 241, 0.15),
@@ -22,10 +23,10 @@ export const Title = styled(motion.h2)`
   background: linear-gradient(135deg, #5aabff 0%, #7b5aff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   position: relative;
@@ -129,7 +130,7 @@ export const SkillIcon = styled.div`
 
 export const SkillName = styled.span`
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
   letter-spacing: 1px;

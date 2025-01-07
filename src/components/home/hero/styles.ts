@@ -34,11 +34,12 @@ export const Gradient = styled.div`
 `;
 
 export const Content = styled.div`
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  width: 100%;
+  width: 96%;
+  margin-left: .8rem;
 `;
 
 export const TextContent = styled.div`
@@ -59,7 +60,7 @@ export const TitleWrapper = styled.div`
 
 export const Subtitle = styled.h2`
   color: rgba(255, 255, 255, 0.7);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(.9rem, 1.5vw, 2rem);
   font-weight: 500;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -79,7 +80,7 @@ export const Subtitle = styled.h2`
 
 export const Title = styled.h1`
   color: #FFFFFF;
-  font-size: clamp(3.5rem, 10vw, 7rem);
+  font-size: clamp(2.5rem, 7vw, 5rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -2px;
@@ -89,10 +90,10 @@ export const Title = styled.h1`
 export const CTAButton = styled.button`
   background: linear-gradient(90deg, #5864F1, #5B7BE5);
   border: none;
-  padding: 1rem 2.5rem;
+  padding: .7rem 1.5rem;
   border-radius: 50px;
   color: white;
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -136,7 +137,7 @@ export const IconButton = styled.button`
   color: #5864F1;
   position: relative;
   overflow: hidden;
-  bottom: 5rem;
+  bottom: 8rem;
   
   &::before {
     content: '';

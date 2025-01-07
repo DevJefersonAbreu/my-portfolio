@@ -23,7 +23,7 @@ export const SpanContainer = styled.div`
 export const Role = styled.span`
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: 4px;

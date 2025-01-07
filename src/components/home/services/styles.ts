@@ -6,7 +6,7 @@ export const Container = styled.section`
 `;
 
 export const Title = styled.h2`
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 5rem;
@@ -96,7 +96,7 @@ export const Card = styled.div`
 
 export const ServiceTitle = styled.h3`
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
   letter-spacing: 0.5px;
@@ -117,7 +117,7 @@ export const ServiceTitle = styled.h3`
 
 export const Description = styled.p`
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.8;
   margin-top: 0.5rem;
 `;

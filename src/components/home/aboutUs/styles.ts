@@ -55,6 +55,7 @@ export const Content = styled.div<AnimatedProps>`
   justify-content: center;
   gap: 6rem;
   max-width: 1400px;
+  
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -68,8 +69,8 @@ export const Content = styled.div<AnimatedProps>`
 
 export const ImageContainer = styled.div<AnimatedProps>`
   position: relative;
-  width: 500px;
-  height: 620px;
+  width: 350px;
+  height: 450px;
   ${animatedStyles}
   transition-delay: 0.2s;
 `;
@@ -131,7 +132,7 @@ export const TitleWrapper = styled.div<AnimatedProps>`
 
 export const Title = styled.h2`
   color: #ffffff;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
 `;
 
@@ -139,13 +140,13 @@ export const TitleHighlight = styled.span`
   background: linear-gradient(135deg, #5aabff 0%, #7b5aff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
   font-weight: 700;
 `;
 
 export const Description = styled.p<AnimatedProps>`
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1.2rem;
+  font-size: .9rem;
   line-height: 1.6;
   margin-bottom: 2rem;
   ${animatedStyles}
@@ -175,17 +176,17 @@ export const InfoItem = styled.div`
 export const InfoLabel = styled.span`
   color: #ffffff;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: .9rem;
 `;
 
 export const InfoValue = styled.span`
   color: #5aabff;
-  font-size: 1.1rem;
+  font-size: .9rem;
 `;
 
 export const InfoContent = styled.span`
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1.1rem;
+  font-size: .9rem;
   white-space: nowrap;
 
   a {
@@ -210,10 +211,10 @@ export const ButtonGroup = styled.div<AnimatedProps>`
 export const HireButton = styled.button`
   background: linear-gradient(90deg, #5aabff, #7b5aff);
   color: white;
-  padding: 0.75rem 2rem;
+  padding: 0.55rem 1.5rem;
   border: none;
   border-radius: 50px;
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -228,10 +229,10 @@ export const HireButton = styled.button`
 export const ResumeButton = styled.button`
   background: transparent;
   color: white;
-  padding: 0.75rem 2rem;
+  padding: 0.55rem 1.5rem;
   border: 1px solid #5aabff;
   border-radius: 50px;
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
