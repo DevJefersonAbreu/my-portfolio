@@ -1,7 +1,11 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.header`
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 `
 
 export const NavBar = styled.nav`
@@ -9,44 +13,30 @@ export const NavBar = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 80px 0 80px;
+  padding: 1rem 2rem;
   background: #382EC4;
-  
-  &.fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #382EC4;
-    z-index: 1000;
-  }
-
-  @media (min-width: 601px) and (max-width: 1000px) {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  @media (max-width: 600px) {
-    padding: 0 80px 0 40px;
-  }
 `
 
 export const Logo = styled.div`
   background: linear-gradient(135deg, #5aabff 0%, #7b5aff 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.7rem;
   font-weight: bold;
-`;
+`
 
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-right: -20%;
-`;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+`
 
 export const NavItem = styled.a`
   color: #ffffff;
@@ -57,7 +47,7 @@ export const NavItem = styled.a`
   &:hover {
     color: #5aabff;
   }
-`;
+`
 
 export const ContactButton = styled.button`
   background: linear-gradient(to right, #5aabff, #7b5aff);
@@ -73,24 +63,73 @@ export const ContactButton = styled.button`
   &:hover {
     opacity: 0.9;
   }
-`;
-
+`
 
 export const HamburgerMenu = styled.div`
   display: none;
   flex-direction: column;
   cursor: pointer;
 
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #FFF;
-    margin: 3px 0;
-  }
-
   @media (max-width: 1000px) {
     display: flex;
   }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  .open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+`
+
+export const MobileMenu = styled.div`
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: #382EC4;
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+
+    &.show {
+      right: 0;
+    }
+  }
+`
+
+export const DesktopMenu = styled.div`
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
+
+export const CloseButton = styled.button`
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 2rem;
 `
 
 export const MajorLinksContainer = styled.div`
@@ -100,7 +139,7 @@ export const MajorLinksContainer = styled.div`
     width: 70%;
   }
   @media (max-width: 1000px) {
-    width: 0%;
+    display: none;
   }
 `
 
@@ -111,30 +150,16 @@ export const LinksContainer = styled.div`
   padding: 0 90px 0 90px; 
   transition: transform 0.3s ease-in-out;
   
-
   &.show-links {
     transform: translateY(0);
     display: flex;
   }
-@media (min-width: 1001px) and (max-width: 1450px) {
+  @media (min-width: 1001px) and (max-width: 1450px) {
     padding: 0;
   }
 
   @media (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    top: 0px;
-    padding-top: 20px;
-    right: 0;
-    width: 100%;
-    height: 500px;
-    background: #382EC4;
-    z-index: 1000;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    display: none;
   }
 `
 
@@ -152,7 +177,7 @@ export const Link = styled.a`
     height: 0px;
     padding: 0px;
     border-bottom: 4px solid white;
-}
+  }
   &::after {
     content: '';
     width: 0px;
@@ -161,16 +186,5 @@ export const Link = styled.a`
     border-bottom: 4px solid transparent;
     transition: .9s;
   }
-
-  
 `
 
-export const CloseButton = styled.button`
-  background-color: transparent;
-  border: none;
-  color: #FFF;
-  font-size: 20px;
-  margin-top: 5px;
-  cursor: pointer;
-  padding-bottom: 10px;
-`

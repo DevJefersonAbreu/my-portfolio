@@ -1,11 +1,11 @@
-import styled, { keyframes } from "styled-components";
-import { ArrowRight } from 'lucide-react';
+import styled, { keyframes } from "styled-components"
+import { motion } from "framer-motion"
 
 const gradientMove = keyframes`
   0% { background-position: 0% 50% }
   50% { background-position: 100% 50% }
   100% { background-position: 0% 50% }
-`;
+`
 
 export const Container = styled.section`
   min-height: 100vh;
@@ -15,9 +15,13 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10rem;
   background-color: #1a2238;
-`;
+  padding-top: 7rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+`
 
 export const Gradient = styled.div`
   position: absolute;
@@ -31,38 +35,49 @@ export const Gradient = styled.div`
   background-size: 200% 200%;
   animation: ${gradientMove} 15s ease infinite;
   z-index: 1;
-`;
+`
 
 export const Content = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  width: 96%;
-  margin-left: .8rem;
-`;
-
-export const TextContent = styled.div`
-  text-align: center;
-  margin-bottom: 6rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-`;
+`
+
+export const TextContent = styled.div`
+  text-align: center;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+  }
+`
 
 export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-`;
 
-export const Subtitle = styled.h2`
+  @media (max-width: 768px) {
+    gap: 0.5rem;
+  }
+`
+
+export const Subtitle = styled(motion.h2)`
   color: rgba(255, 255, 255, 0.7);
-  font-size: clamp(.9rem, 1.5vw, 2rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
   font-weight: 500;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   position: relative;
   
@@ -76,24 +91,43 @@ export const Subtitle = styled.h2`
     height: 1px;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
   }
-`;
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+`
 
 export const Title = styled.h1`
   color: #FFFFFF;
-  font-size: clamp(2.5rem, 7vw, 5rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 800;
-  line-height: 1;
-  letter-spacing: -2px;
+  line-height: 1.2;
+  letter-spacing: -1px;
   text-shadow: 0 0 30px rgba(88, 100, 241, 0.3);
-`;
+
+  @media (max-width: 768px) {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+  }
+`
+
+export const InteractiveWord = styled(motion.span)`
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #5864F1;
+  }
+`
 
 export const CTAButton = styled.button`
   background: linear-gradient(90deg, #5864F1, #5B7BE5);
   border: none;
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 50px;
   color: white;
-  font-size: .9rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
   font-weight: 600;
   cursor: pointer;
   display: flex;
@@ -106,29 +140,34 @@ export const CTAButton = styled.button`
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(88, 100, 241, 0.5);
   }
-`;
 
-export const ArrowIcon = styled(ArrowRight)`
-  transition: transform 0.3s ease;
-  ${CTAButton}:hover & {
-    transform: translateX(5px);
+  @media (max-width: 768px) {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
-`;
+`
 
 export const BottomContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
   padding: 0 2rem;
-`;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+`
 
 export const IconButton = styled.button`
-  width: 80px;
-  height: 80px;
+  width: clamp(50px, 10vw, 80px);
+  height: clamp(50px, 10vw, 80px);
   border-radius: 50%;
   background: rgba(88, 100, 241, 0.1);
-  border: 3px solid rgba(88, 100, 241, 0.3);
+  border: 2px solid rgba(88, 100, 241, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,7 +176,7 @@ export const IconButton = styled.button`
   color: #5864F1;
   position: relative;
   overflow: hidden;
-  bottom: 8rem;
+  text-decoration: none; 
   
   &::before {
     content: '';
@@ -166,34 +205,10 @@ export const IconButton = styled.button`
       transform: scale(1.1);
     }
   }
-`;
 
-export const ChatButton = styled.button`
-  background: linear-gradient(90deg, #5864F1, #5B7BE5);
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(88, 100, 241, 0.3);
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(88, 100, 241, 0.5);
+  @media (max-width: 768px) {
+    width: 50px;
+    height: 50px;
   }
-
-  svg {
-    transition: transform 0.3s ease;
-  }
-
-  &:hover svg {
-    transform: rotate(-15deg) scale(1.1);
-  }
-`;
+`
 
