@@ -25,7 +25,7 @@ const createDefaultProject = (id: string): Project => ({
   description:
     "Um portfólio profissional desenvolvido como serviço de freelancer, utilizando HTML, CSS e JavaScript. Demonstra habilidades em design responsivo e interatividade web, criado para atender às necessidades específicas do cliente.",
   category: "website",
-  image: "/placeholder.svg?height=720&width=1280",
+  image: "/assets/imagesProjects/port.png",
   deployUrl: "https://devjefersonabreu.github.io/portfolio-profissional-gabriel-barreto-1.0/",
   githubUrl: "https://github.com/DevJefersonAbreu/portfolio-profissional-gabriel-barreto-1.0",
   technologies: [
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     category: "website",
     deployUrl: "https://psychologist-website-azure.vercel.app/",
     githubUrl: "https://github.com/DevJefersonAbreu/psychologist-website",
-    image: "/placeholder.svg?height=720&width=1280",
+    image: "/assets/imagesProjects/psic.png",
     technologies: [
       { name: "Next.js", Icon: SiNextdotjs },
       { name: "TypeScript", Icon: SiTypescript },
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     category: "website",
     deployUrl: "https://hr-recruiter-website.vercel.app",
     githubUrl: "https://github.com/DevJefersonAbreu/hr-recruiter-website",
-    image: "/placeholder.svg?height=720&width=1280",
+    image: "/assets/imagesProjects/rh.png",
     technologies: [
       { name: "Next.js", Icon: SiNextdotjs },
       { name: "TypeScript", Icon: SiTypescript },
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     description:
       "Outro portfólio profissional desenvolvido como serviço de freelancer, utilizando HTML, CSS e JavaScript. Este projeto demonstra a capacidade de criar designs personalizados e responsivos para atender às necessidades específicas de diferentes clientes.",
     category: "website",
-    image: "/placeholder.svg?height=720&width=1280",
+    image: "/assets/imagesProjects/port2.png",
     deployUrl: "https://devjefersonabreu.github.io/portfolio-profissional-sarah-rodrigues/",
     githubUrl: "https://github.com/DevJefersonAbreu/portfolio-profissional-sarah-rodrigues",
     technologies: [
@@ -114,9 +114,19 @@ export const projects: Project[] = [
       { name: "JavaScript", Icon: SiJavascript },
     ],
   },
-  createDefaultProject("7"),
-  createDefaultProject("8"),
-  createDefaultProject("9"),
-  createDefaultProject("10"),
+  {
+    id: "7",
+    title: "Movie-App",
+    description:
+      "Aplicativo Movie App desenvolvido utilizando Next.js com TypeScript e Styled Components, integrando-se à API Movie. Este projeto demonstra a capacidade de criar interfaces modernas, responsivas e altamente funcionais para fornecer uma experiência personalizada e dinâmica aos usuários.",
+    category: "website",
+    image: "/assets/imagesProjects/port2.png",
+    deployUrl: "https://movie-app-ten-omega-64.vercel.app",
+    githubUrl: "https://github.com/DevJefersonAbreu/movie-app",
+    technologies: [
+      { name: "Next.js", Icon: SiNextdotjs },
+      { name: "TypeScript", Icon: SiTypescript },
+      { name: "Styled Components", Icon: SiStyledcomponents },
+    ],
+  },
 ]
-

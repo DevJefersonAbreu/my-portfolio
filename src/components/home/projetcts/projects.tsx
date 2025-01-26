@@ -68,19 +68,19 @@ const Projects: React.FC = () => {
         <S.Title>PROJETOS</S.Title>
         <S.Categories>
           <S.CategoryButton $active={activeCategory === "all"} onClick={() => setActiveCategory("all")}>
-            All Projects
+          Todos os Projetos
           </S.CategoryButton>
           <S.CategoryButton $active={activeCategory === "mobile"} onClick={() => setActiveCategory("mobile")}>
-            Mobile App
+            Mobile
           </S.CategoryButton>
           <S.CategoryButton $active={activeCategory === "website"} onClick={() => setActiveCategory("website")}>
             Website
           </S.CategoryButton>
           <S.CategoryButton $active={activeCategory === "desktop"} onClick={() => setActiveCategory("desktop")}>
-            Desktop
+            Inteligênia Artificial
           </S.CategoryButton>
           <S.CategoryButton $active={activeCategory === "other"} onClick={() => setActiveCategory("other")}>
-            Other Projects
+          Outros Projetos
           </S.CategoryButton>
         </S.Categories>
         <S.ProjectsGrid>
