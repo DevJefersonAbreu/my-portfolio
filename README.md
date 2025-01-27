@@ -1,3 +1,45 @@
+# Meu Portfólio Pessoal 🌟
+
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi construído utilizando **Next.js**, **TypeScript** e **Styled Components** para oferecer uma experiência elegante, moderna e responsiva.
+
+🖥️ **Acesse aqui**: [Meu Portfólio](https://my-portfolio-eight-plum-78.vercel.app)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Next.js**: Framework React para renderização otimizada e construção de aplicações web modernas.
+- **TypeScript**: Garantindo tipagem estática e segurança no desenvolvimento.
+- **Styled Components**: Para estilização de componentes com design consistente e elegante.
+
+---
+
+## 🌐 Estrutura do Site
+
+O portfólio conta com as seguintes páginas e seções:
+
+1. **Header**: Navegação simples e intuitiva para acessar as principais seções do site.
+2. **Página Inicial**: Apresentação principal com uma introdução ao portfólio.
+3. **Sobre Mim**: Uma visão geral da minha trajetória, experiências e objetivos profissionais.
+4. **Skills**: Uma lista das minhas habilidades técnicas e ferramentas com as quais trabalho.
+5. **Projetos**: Uma galeria com os projetos que já desenvolvi, detalhando tecnologias e funcionalidades.
+6. **Contato**: Um formulário para envio de mensagens e links para as minhas redes sociais.
+7. **Footer**: Informações de rodapé com links úteis e direitos reservados.
+
+---
+
+## ✨ Funcionalidades
+
+- Design responsivo para dispositivos móveis e desktops.
+- Navegação suave entre as seções.
+- Integração com formulários para envio de mensagens.
+- Código modular e reutilizável para fácil manutenção.
+
+---
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
