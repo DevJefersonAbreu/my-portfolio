@@ -120,7 +120,7 @@ export const projects: Project[] = [
     description:
       "Aplicativo Movie App desenvolvido utilizando Next.js com TypeScript e Styled Components, integrando-se à API Movie. Este projeto demonstra a capacidade de criar interfaces modernas, responsivas e altamente funcionais para fornecer uma experiência personalizada e dinâmica aos usuários.",
     category: "website",
-    image: "/assets/imagesProjects/port2.png",
+    image: "/assets/imagesProjects/movie.png",
     deployUrl: "https://movie-app-ten-omega-64.vercel.app",
     githubUrl: "https://github.com/DevJefersonAbreu/movie-app",
     technologies: [
