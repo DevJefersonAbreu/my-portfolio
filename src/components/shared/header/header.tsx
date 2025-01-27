@@ -39,7 +39,9 @@ export function Header() {
             <S.NavItem href="#services" onClick={toggleMenu}>
               SERVIÇOS
             </S.NavItem>
-            <S.ContactButton onClick={toggleMenu}>CONTATO</S.ContactButton>
+            <a href="https://wa.me/5585989220171" target="_blank" rel="noopener noreferrer"> {/* Link para o WhatsApp */}
+              <S.ContactButton onClick={toggleMenu}>CONTATO</S.ContactButton>
+            </a>
           </S.Nav>
         </S.MobileMenu>
         <S.DesktopMenu>
@@ -49,11 +51,12 @@ export function Header() {
             <S.NavItem href="#skills">SKILLS</S.NavItem>
             <S.NavItem href="#portfolio">PROJETOS</S.NavItem>
             <S.NavItem href="#services">SERVIÇOS</S.NavItem>
-            <S.ContactButton>CONTATO</S.ContactButton>
+            <a href="https://wa.me/5585989220171" target="_blank" rel="noopener noreferrer"> {/* Link para o WhatsApp */}
+              <S.ContactButton>CONTATO</S.ContactButton>
+            </a>
           </S.Nav>
         </S.DesktopMenu>
       </S.NavBar>
     </S.Container>
   )
 }
-
