@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
                 portfolioSection?.scrollIntoView({ behavior: "smooth" })
               }}
             >
-              <span>Explore Projects</span>
+              <span>Explorar projetos</span>
               <ArrowRight size={20} />
             </S.CTAButton>
           </S.TextContent>

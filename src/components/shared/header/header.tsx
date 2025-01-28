@@ -25,10 +25,10 @@ export function Header() {
           </S.CloseButton>
           <S.Nav>
             <S.NavItem href="#hero" onClick={toggleMenu}>
-              HOME
+              INÍCIO
             </S.NavItem>
             <S.NavItem href="#about" onClick={toggleMenu}>
-              ABOUT ME
+              SOBRE MIM
             </S.NavItem>
             <S.NavItem href="#skills" onClick={toggleMenu}>
               SKILLS
@@ -46,8 +46,8 @@ export function Header() {
         </S.MobileMenu>
         <S.DesktopMenu>
           <S.Nav>
-            <S.NavItem href="#hero">HOME</S.NavItem>
-            <S.NavItem href="#about">ABOUT ME</S.NavItem>
+            <S.NavItem href="#hero">INÍCIO</S.NavItem>
+            <S.NavItem href="#about">SOBRE MIM</S.NavItem>
             <S.NavItem href="#skills">SKILLS</S.NavItem>
             <S.NavItem href="#portfolio">PROJETOS</S.NavItem>
             <S.NavItem href="#services">SERVIÇOS</S.NavItem>
